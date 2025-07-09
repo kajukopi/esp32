@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 OTA Upload</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+    input[type=file] { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h2>ESP32 OTA Firmware Upload</h2>
+  <form method="POST" action="/update" enctype="multipart/form-data">
+    <input type="file" name="update">
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
